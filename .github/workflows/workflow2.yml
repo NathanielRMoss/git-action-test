@@ -13,3 +13,13 @@ jobs:
         working-directory: ./simpleapp      
       - run: 'yarn build'
         working-directory: ./simpleapp
+      - name: update remote repo
+      - uses: appleboy/ssh-action@master
+        with:
+         host: $ {{ secrets.HOST }}
+         username: $ {{ secrets.USERNAME }}
+         password: $ {{ secrets.PASSWORD }}
+         port: $ {{ secrets.PORT }}
+         script: git pull
+
+         
