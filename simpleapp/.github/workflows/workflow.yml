@@ -1,0 +1,11 @@
+name: Node Continuous Integration
+
+on:
+   workflow_dispatch:
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: yarn
+      - run: yarn build
