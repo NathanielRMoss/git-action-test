@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: 'yarn --cwd simpleapp'
-      - run: 'yar --cwd simpleapp build'
+      - run: 'yarn --cwd simpleapp build'
