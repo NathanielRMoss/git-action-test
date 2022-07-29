@@ -2,10 +2,13 @@ name: Node Continuous Integration
 
 on:
    workflow_dispatch:
+   paths:
+      - '~/simpleapp/'
 
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
     steps: 
-      - run: yarn
-      - run: yarn build
+      - run: 'yarn' 
+      - run: 'yarn build'
+        # working-directory: ./simpleapp
