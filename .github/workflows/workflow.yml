@@ -7,5 +7,5 @@ jobs:
   test_pull_request:
     runs-on: ubuntu-latest
     steps: 
-      - run: 'simpleapp/yarn'
-      - run: 'simpleapp/yarn build'
+      - run: 'yarn --cwd simpleapp'
+      - run: 'yar --cwd simpleapp build'
