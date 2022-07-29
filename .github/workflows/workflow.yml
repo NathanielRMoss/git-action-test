@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: 'yarn' 
-        working-directory: simpleapp
+        working-directory: ./simpleapp
       - run: 'yarn build'
-        working-directory: simpleapp
+        working-directory: ./simpleapp
