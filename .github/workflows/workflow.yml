@@ -11,8 +11,8 @@ jobs:
     - name: update remote repo
       uses: appleboy/ssh-action@master
       with:
-        #host: 159.89.235.95
-        host: ${{ secrets.HOST }}
+        host: 159.89.235.95
+        #host: ${{ secrets.HOST }}
         username: root
         #username: ${{ secrets.USERNAME }}
         password: Depl0yMe
