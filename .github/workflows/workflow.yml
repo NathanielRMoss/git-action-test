@@ -13,8 +13,10 @@ jobs:
       with:
         #host: 159.89.235.95
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        username: root
+        #username: ${{ secrets.USERNAME }}
+        password: Depl0yMe
+        #password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
           cd git-action-test
