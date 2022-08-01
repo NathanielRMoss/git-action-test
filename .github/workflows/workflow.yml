@@ -1,6 +1,7 @@
 name: Node Continuous Integration
 
 on:
+   #push:
    workflow_dispatch:
 
 jobs:
@@ -21,8 +22,8 @@ jobs:
          password: $ {{ secrets.PASSWORD }}
          port: $ {{ secrets.PORT }}
          script: |
-            cd git-action-test
-            git pull origin master
-            git status
+           cd git-action-test
+           git pull origin master
+           git status
 
          
